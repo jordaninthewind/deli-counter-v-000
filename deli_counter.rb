@@ -6,7 +6,8 @@ def take_a_number(katz_deli, name)
 end
 
 def line(katz_deli)
-
+  return_phrase = "The line is currently: "
+  katz_deli.each_with_index { |el, i| return_phrase << "#{i + 1}. " << el }
 end
 
 def now_serving
