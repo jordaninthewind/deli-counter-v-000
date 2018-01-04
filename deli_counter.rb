@@ -12,5 +12,5 @@ def line(katz_deli)
 end
 
 def now_serving(katz_deli)
-
+  p "Currently serving #{katz_deli[0]}."
 end
