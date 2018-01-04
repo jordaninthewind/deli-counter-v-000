@@ -10,8 +10,11 @@ def line(katz_deli)
   if katz_deli.length == 0
     puts "The line is currently empty."
   else
-    katz_deli.each_with_index { |el, i| return_phrase << "#{i + 1}. " << "#{el} " }
-    return_phrase.chars.delete_at(-1)
+    katz_deli.each_with_index do |el, i|
+    if i == katz_deli.length - 1
+      return_phrase << "#{i + 1}. " << "#{el}"
+    else
+      return_phrase << "#{i + 1}. " << "#{el} "
     puts return_phrase
   end
 end
