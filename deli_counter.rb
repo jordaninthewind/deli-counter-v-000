@@ -8,7 +8,7 @@ end
 def line(katz_deli)
   return_phrase = "The line is currently: "
   if katz_deli.length == 0
-    p "The line is currently empty."
+    puts "The line is currently empty."
   else
     katz_deli.each_with_index do |el, i|
       if i == katz_deli.length - 1
