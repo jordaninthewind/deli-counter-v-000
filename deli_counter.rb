@@ -17,8 +17,8 @@ def line(katz_deli)
         return_phrase << "#{i + 1}. " << "#{el} "
       end
     end
+    puts return_phrase
   end
-  puts return_phrase
 end
 
 def now_serving(katz_deli)
