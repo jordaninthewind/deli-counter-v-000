@@ -8,8 +8,9 @@ end
 def line(katz_deli)
   return_phrase = "The line is currently: "
   katz_deli.each_with_index { |el, i| return_phrase << "#{i + 1}. " << el }
+  p return_phrase
 end
 
-def now_serving
+def now_serving(katz_deli)
 
 end
